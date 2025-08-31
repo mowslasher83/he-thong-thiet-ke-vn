@@ -34,6 +34,7 @@ module.exports = {
         hot: true,
         compress: true,  // Added for better performance
         port: 9000,      // Added a specific port for development
-        open: true       // Automatically open the browser
+        open: true,      // Automatically open the browser
+        historyApiFallback: true // Added for handling client-side routing
     }
 };

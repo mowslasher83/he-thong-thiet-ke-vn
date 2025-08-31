@@ -30,7 +30,7 @@ module.exports = {
         extensions: ['.js', '.jsx']  // Allow importing without specifying extensions
     },
     devServer: {
-        contentBase: './dist',
+        static: './dist',  // Changed from contentBase to static for webpack 5
         hot: true,
         compress: true,  // Added for better performance
         port: 9000,      // Added a specific port for development

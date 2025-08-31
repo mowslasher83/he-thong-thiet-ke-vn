@@ -10,8 +10,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,  
-                exclude: /node_modules/,  
+                test: /\.jsx?$/,  // Transpile JavaScript and JSX files
+                exclude: /node_modules/,  // Exclude Node modules from transpilation
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -21,13 +21,13 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,  
+                test: /\.css$/,  // Process CSS files
                 use: ['style-loader', 'css-loader']
             }
         ]
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx']  // Allow importing without specifying extensions
     },
     devServer: {
         contentBase: './dist',

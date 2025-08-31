@@ -31,6 +31,8 @@ module.exports = {
     },
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: true,
+        compress: true,  // Added for better performance
+        port: 9000       // Added a specific port for development
     }
 };

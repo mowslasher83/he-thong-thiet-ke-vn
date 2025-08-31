@@ -10,7 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,  // Transpile JavaScript and JSX files
+                test: \/\.jsx?$/,  // Transpile JavaScript and JSX files
                 exclude: /node_modules/,  // Exclude Node modules from transpilation
                 use: {
                     loader: 'babel-loader',
@@ -21,7 +21,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,  // Process CSS files
+                test: \/\.css$/,  // Process CSS files
                 use: ['style-loader', 'css-loader']
             }
         ]
